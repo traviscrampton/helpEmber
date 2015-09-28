@@ -5,7 +5,7 @@ export default Ember.Component.extend({
   destroy(ticket){
     if(confirm("Are You sure that you want to destroy this ticket?")){
       debugger;
-      this.sendAction('destropfyTicket', ticket);
+      this.sendAction('destroyTicket', ticket);
     }
 
    }
