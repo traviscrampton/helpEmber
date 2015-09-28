@@ -1,14 +1,24 @@
 .navbar-custom {
-  background-color: #F2681D;
+  background-color: #f05a26;
+  height: 50px;
+  padding-top: 5px;
+  font-family:;
+  color: white;
   /*color: white;*/
 }
 
 .navbar {
-  /*color: white;*/
+  color: white;
   text-align: center;
 }
 
 #help {
   color: white;
-  background-color: #F2681D;
+  background-color: #f05a26;
+}
+
+body {
+  background-color: #ecf0f1;
+  /*font-family: 'Nixie One', cursive;
+  padding-top: 50px;*/
 }
