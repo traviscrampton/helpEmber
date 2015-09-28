@@ -5,6 +5,7 @@ export default Ember.Component.extend({
   anotherPair: false,
   showFifteenMinutes: false,
   showForm: false,
+  submittedTicket: false,
 
   actions: {
     showAnotherPair() {
@@ -19,5 +20,16 @@ export default Ember.Component.extend({
       this.set('showFifteenMinutes', false),
       this.set('showForm', true)
     },
+    save() {
+      var params = {
+        name: this.get('name'),
+        description: this.get('description'),
+        timeAdded: new Date()
+      };
+      debugger;
+      this.sendAction('save', params);
+      this.set('showForm', false);
+      this.set('submittedTicket', true);
+    }
   }
 });

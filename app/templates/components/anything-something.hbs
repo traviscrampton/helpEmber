@@ -17,14 +17,20 @@
   {{else if showForm}}
   <form>
     <br>
-    {{textarea value=title class='form-control' id="title" rows="1" cols="50" placeholder='Please enter your name'}}
+    {{textarea value=name class='form-control' id="name" rows="1" cols="50" placeholder='Please enter your name'}}
     <div class="form-group">
       <br>
       {{textarea value=description class='form-control' id="description" rows="8" cols="40" placeholder='Give a brief description of the issue you are having.'}}
       <br>
-      <button class='btn help'>Help!</button>
+      <button class='btn help'{{action "save"}}>Help!</button>
     </div>
   </form>
+
+  {{else if submittedTicket}}
+    <h2>Thanks, {{ticket.name}}. Help is on the way</h2>
+    <h2>Leave this page open while you continue working on the problem.</h2>
+    <button class='btn help' {{action 'closeTicket'}}>Nevermind, we got it.</button>
+  {{else}}
   {{/if}}
 </div>
 

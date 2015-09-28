@@ -5,12 +5,11 @@ export default Ember.Route.extend({
     return this.store.findRecord('ticket', params.ticket_id);
   },
 
-actions: {
-  save(params) {
-    var newTicket = this.store.createRecord('ticket', params);
-    newTicket.save();
-    this.transitionTo('ticket', newTicket);
+  actions: {
+    save(params) {
+      var newTicket = this.store.createRecord('ticket', params);
+      newTicket.save();
+    }
   }
-}
 
 });

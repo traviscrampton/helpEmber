@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'help-queue',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://help-ticket.firebaseio.com/',
+    firebase: 'https://help-tickets.firebaseio.com',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
