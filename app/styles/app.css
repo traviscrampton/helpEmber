@@ -2,9 +2,9 @@
   background-color: #f05a26;
   height: 50px;
   padding-top: 5px;
-  font-family:;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
   color: white;
-  /*color: white;*/
 }
 
 .navbar {
@@ -19,5 +19,18 @@
 
 body {
   background-color: #ecf0f1;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#closedTicket {
+  text-align: center;
+}
+
+#queue {
+  padding-top: 6px;
+}
+
+#index {
+  padding: 0 10% 0 10%;
+  text-align: center;
 }

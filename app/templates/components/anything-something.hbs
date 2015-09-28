@@ -1,17 +1,17 @@
 
-<div class='container'>
+<div class='container' id='index'>
   {{#if pairShow}}
   {{format-date ticket.timeAdded}}
-  <h2>Have you gone through all the steps on the Learn How to Program debugging lesson?</h2>
+  <h4>Have you gone through all the steps on the Learn How to Program debugging lesson?</h4>
   <button class='btn help' {{action "showAnotherPair" }}>Yes >></button>
 
 
   {{else if anotherPair}}
-  <h2>Have you asked another pair for help?</h2>
+  <h4>Have you asked another pair for help?</h4>
   <button class='btn help' {{action "showFifteenMinutes"}}>Yes >></button>
 
   {{else if showFifteenMinutes}}
-  <h2>Have you spent 15 minutes going through through the problem documenting every step</h2>
+  <h4>Have you spent 15 minutes going through through the problem documenting every step</h4>
   <button class='btn help' {{action "showForm"}}>Yes >></button>
 
   {{else if showForm}}
@@ -27,8 +27,8 @@
   </form>
 
   {{else if submittedTicket}}
-    <h2>Thanks, {{ticket.name}}. Help is on the way</h2>
-    <h2>Leave this page open while you continue working on the problem.</h2>
+    <h4>Thanks, {{ticket.name}}. Help is on the way</h4>
+    <h4>Leave this page open while you continue working on the problem.</h4>
     <button class='btn help' {{action 'closeTicket'}}>Nevermind, we got it.</button>
   {{else}}
   {{/if}}

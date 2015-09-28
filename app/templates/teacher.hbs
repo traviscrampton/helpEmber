@@ -1,0 +1,7 @@
+{{outlet}}
+
+<ul>
+  {{#each model as |ticket|}}
+  {{teacher-tile ticket=ticket destroyTicket="destroyTicket"}}
+  {{/each}}
+</ul>
